@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Umunnabuike | IT Portfolio</title>
+    <style>
+        :root { --primary: #0f172a; --accent: #2563eb; --bg: #f8fafc; --text: #334155; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; }
+        header { background: var(--primary); color: white; padding: 4rem 2rem; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { font-size: 1.2rem; opacity: 0.9; margin-top: 0.5rem; }
+        nav { background: #1e293b; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; transition: color 0.3s; }
+        nav a:hover { color: #60a5fa; }
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
+        section { background: white; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        h2 { color: var(--primary); border-bottom: 3px solid var(--accent); padding-bottom: 0.5rem; }
+        .project { margin-bottom: 2rem; }
+        .tag { display: inline-block; background: #e0e7ff; color: var(--accent); padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin-right: 5px; }
+        footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Christian Ikedi Umunnabuike</h1>
+    <p>Information Technology | Cloud Architecture & Data Analytics</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#resume">Résumé</a>
+    <a href="#projects">Projects</a>
+    <a href="#alignment">Spiritual Alignment</a>
+</nav>
+
+<div class="container">
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I build systems that turn raw data into decisions people can trust. My path into Information Technology is driven by a dual passion for cloud infrastructure and data analytics, and a foundational belief that "all things unto the Lord are spiritual." I am seeking a role in cloud data engineering or analytics where I can continue growing technically while contributing to a team I can genuinely respect.</p>
+    </section>
+
+    <section id="resume">
+        <h2>Professional Résumé</h2>
+        <h3>Education</h3>
+        <p><strong>Bachelor of Science, Information Technology</strong> — Ensign College (Expected Graduation: 2026)</p>
+        <h3>Technical Skills</h3>
+        <p><span class="tag">AWS</span> <span class="tag">Azure</span> <span class="tag">SQL</span> <span class="tag">Python</span> <span class="tag">Linux</span> <span class="tag">Networking</span> <span class="tag">Cybersecurity</span></p>
+        <h3>Certifications</h3>
+        <p>AWS Certified Cloud Practitioner (In Progress) | Microsoft Certified: Azure Administrator Associate (In Progress)</p>
+        <p><em>(Note: You can link your actual PDF résumé here later: <a href="#">Download Full Résumé (PDF)</a>)</em></p>
+    </section>
+
+    <section id="projects">
+        <h2>Professional Projects</h2>
+        
+        <div class="project">
+            <h3>1. Cloud-Hosted Data Analytics Pipeline</h3>
+            <p><strong>Context:</strong> Designed a cloud-hosted relational database to analyze consumer transaction patterns.</p>
+            <p><strong>Refinements:</strong> Implemented table partitioning and composite indexing (reducing query time by 40%). Replaced a single admin account with Role-Based Access Control (RBAC).</p>
+            <p><strong>Ethical Integration:</strong> Implemented SHA-256 hashing for PII so analysts can query trends without exposing identities. Added an automated stored procedure to purge logs older than 24 months, enforcing data minimization.</p>
+        </div>
+
+        <div class="project">
+            <h3>2. Azure Infrastructure and Identity Governance</h3>
+            <p><strong>Context:</strong> Built out Azure cloud infrastructure from scratch, provisioning VMs and implementing identity governance via Microsoft Entra ID.</p>
+            <p><strong>Refinements:</strong> Overcame the temptation to over-permission by rebuilding the environment using least-privilege RBAC roles and narrowly scoped Network Security Groups (NSGs).</p>
+        </div>
+
+        <div class="project">
+            <h3>3. Linux Hardening and Intrusion Detection Lab</h3>
+            <p><strong>Context:</strong> Built a segmented Linux lab with a Kali Linux attacker, deployed an Intrusion Detection System (IDS), and analyzed simulated attack traffic.</p>
+            <p><strong>Refinements:</strong> Tuned IDS rules to reduce alert fatigue and documented every configuration change to ensure reproducibility and security.</p>
+        </div>
+    </section>
+
+    <section id="alignment">
+        <h2>Spiritual & Professional Alignment</h2>
+        <p>My technical competencies are not separate from my spiritual guiding principles; they are the practical application of them.</p>
+        <ul>
+            <li><strong>Cloud Architecture & "Generating Light":</strong> By implementing strict Identity and Access Management (IAM) and least-privilege access, I am practically driving out the darkness of vulnerability, protecting user data with the same reverence I would show a person in my community (Elder Kim B. Clark).</li>
+            <li><strong>Data Analytics & "Reverence Invites Revelation":</strong> Extracting meaningful insights requires a clear, focused mind. When debugging complex SQL queries, I cultivate a reverent mindset, inviting the "still small voice" to guide my logical reasoning (Elder Boyd K. Packer).</li>
+            <li><strong>System Administration & "Enduring Power":</strong> To avoid burnout in the fast-paced IT industry, I intentionally ground my daily tasks in prayer and covenant-keeping, accessing the "enduring power" to maintain resilience and ethical clarity under pressure (Elder Kelly R. Johnson).</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Christian Umunnabuike | Built with GitHub Pages</p>
+</footer>
+
+</body>
+</html>
