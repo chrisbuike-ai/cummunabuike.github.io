@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Umunnabuike | IT Portfolio</title>
     <style>
-        :root { --primary: #0f172a; --accent: #2563eb; --bg: #f8fafc; --text: #334155; }
+        :root { --primary: #0f172a; --accent: #2563eb; --bg: #f8fafc; --text: #334155; --focus: #f59e0b; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; }
+        
+        /* Skip Link for Accessibility */
+        .skip-link { position: absolute; top: -40px; left: 0; background: var(--accent); color: white; padding: 8px; z-index: 1000; }
+        .skip-link:focus { top: 0; }
+
         header { background: var(--primary); color: white; padding: 4rem 2rem; text-align: center; }
         header h1 { margin: 0; font-size: 2.5rem; }
         header p { font-size: 1.2rem; opacity: 0.9; margin-top: 0.5rem; }
+        
         nav { background: #1e293b; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 100; }
         nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; transition: color 0.3s; }
-        nav a:hover { color: #60a5fa; }
+        nav a:hover, nav a:focus { color: #60a5fa; outline: 2px solid var(--focus); outline-offset: 2px; }
+        
         .container { max-width: 900px; margin: 2rem auto; padding: 0 2rem; }
         section { background: white; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
         h2 { color: var(--primary); border-bottom: 3px solid var(--accent); padding-bottom: 0.5rem; }
@@ -21,17 +28,33 @@
         .tag { display: inline-block; background: #e0e7ff; color: var(--accent); padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin-right: 5px; margin-bottom: 5px; }
         ul { margin-bottom: 1rem; }
         li { margin-bottom: 0.5rem; }
+        
+        /* Video Placeholder */
+        .video-container { background: #e2e8f0; border: 2px dashed #94a3b8; border-radius: 8px; padding: 3rem 1rem; text-align: center; margin: 1.5rem 0; color: #475569; }
+
         footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.9rem; }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header { padding: 2rem 1rem; }
+            header h1 { font-size: 1.8rem; }
+            nav { display: flex; flex-direction: column; padding: 0.5rem; }
+            nav a { margin: 0.5rem 0; padding: 0.5rem; border-bottom: 1px solid #334155; }
+            .container { padding: 0 1rem; }
+            section { padding: 1.5rem; }
+        }
     </style>
 </head>
 <body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <header>
     <h1>Christian Umunnabuike</h1>
     <p>Information Technology | Cloud Architecture & Data Analytics</p>
 </header>
 
-<nav>
+<nav aria-label="Main Navigation">
     <a href="#about">About</a>
     <a href="#resume">Résumé</a>
     <a href="#projects">Projects</a>
@@ -40,11 +63,17 @@
     <a href="#review">Portfolio Review</a>
 </nav>
 
-<div class="container">
+<div class="container" id="main-content">
 
     <section id="about">
         <h2>About Me</h2>
         <p>I build systems that turn raw data into decisions people can trust. My path into Information Technology is driven by a dual passion for cloud infrastructure and data analytics, and a foundational belief that "all things unto the Lord are spiritual." I am seeking a role in cloud data engineering or analytics where I can continue growing technically while contributing to a team I can genuinely respect.</p>
+        
+        <!-- Multimedia Integration -->
+        <div class="video-container" role="region" aria-label="Video Introduction Placeholder">
+            <h3>🎥 Video Introduction</h3>
+            <p><em>[Embed Capstone Video Response Here: 3.5-minute reflection on developmental journey, spiritual principles, and GitHub portfolio link.]</em></p>
+        </div>
     </section>
 
     <section id="resume">
