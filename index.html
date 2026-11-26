@@ -50,12 +50,30 @@
 
         footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.9rem; }
 
-        /* Mobile Responsiveness */
+        /* Mobile Responsiveness (Fixed Navigation) */
         @media (max-width: 768px) {
             header { padding: 2rem 1rem; }
             header h1 { font-size: 1.8rem; }
-            nav { display: flex; flex-direction: column; padding: 0.5rem; }
-            nav a { margin: 0.5rem 0; padding: 0.5rem; border-bottom: 1px solid #334155; }
+            
+            nav {
+                position: static; /* Scrolls away with the page instead of sticking */
+                display: flex;
+                flex-direction: row; /* Horizontal layout */
+                flex-wrap: nowrap;
+                overflow-x: auto; /* Swipe sideways if links don't fit */
+                -webkit-overflow-scrolling: touch;
+                gap: 1.25rem;
+                padding: 0.75rem 1rem;
+                justify-content: flex-start;
+            }
+            nav a {
+                margin: 0;
+                padding: 0.25rem 0;
+                white-space: nowrap; /* Keep each link on one line */
+                font-size: 0.9rem;
+                border-bottom: none;
+            }
+
             .container { padding: 0 1rem; }
             section { padding: 1.5rem; }
         }
@@ -96,7 +114,7 @@
         <h2>Professional Résumé</h2>
         
         <h3>Education</h3>
-        <p><strong>Bachelor of Science, Information Technology</strong> - Ensign College (Expected Graduation: 2026)</p>
+        <p><strong>Bachelor of Science, Information Technology</strong> — Ensign College (Expected Graduation: 2026)</p>
         <p><em>Completed:</em> IT 335 (AWS Cloud Practitioner), IT 330 (Microsoft Azure Technologies Administrator)<br>
         <em>In Progress:</em> IT 370 (Advanced Linux), IT 497 (IT Capstone)</p>
 
