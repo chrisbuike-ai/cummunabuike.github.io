@@ -29,8 +29,24 @@
         ul { margin-bottom: 1rem; }
         li { margin-bottom: 0.5rem; }
         
-        /* Video Placeholder */
-        .video-container { background: #e2e8f0; border: 2px dashed #94a3b8; border-radius: 8px; padding: 3rem 1rem; text-align: center; margin: 1.5rem 0; color: #475569; }
+        /* Responsive Video Wrapper */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            background: #e2e8f0;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
 
         footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.9rem; }
 
@@ -69,10 +85,10 @@
         <h2>About Me</h2>
         <p>I build systems that turn raw data into decisions people can trust. My path into Information Technology is driven by a dual passion for cloud infrastructure and data analytics, and a foundational belief that "all things unto the Lord are spiritual." I am seeking a role in cloud data engineering or analytics where I can continue growing technically while contributing to a team I can genuinely respect.</p>
         
-        <!-- Multimedia Integration -->
-        <div class="video-container" role="region" aria-label="Video Introduction Placeholder">
-            <h3>🎥 Video Introduction</h3>
-            <p><em>[Embed Capstone Video Response Here: 3.5-minute reflection on developmental journey, spiritual principles, and GitHub portfolio link.]</em></p>
+        <!-- Embedded Multimedia Video -->
+        <h3>🎥 Video Introduction</h3>
+        <div class="video-wrapper" role="region" aria-label="Capstone Video Introduction">
+            <iframe src="https://www.youtube.com/embed/4UzkevsRaQo?si=2s2uWOyRX5GWSVyL" title="Christian Umunnabuike Capstone Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -80,7 +96,7 @@
         <h2>Professional Résumé</h2>
         
         <h3>Education</h3>
-        <p><strong>Bachelor of Science, Information Technology</strong> — Ensign College (Expected Graduation: 2026)</p>
+        <p><strong>Bachelor of Science, Information Technology</strong> - Ensign College (Expected Graduation: 2026)</p>
         <p><em>Completed:</em> IT 335 (AWS Cloud Practitioner), IT 330 (Microsoft Azure Technologies Administrator)<br>
         <em>In Progress:</em> IT 370 (Advanced Linux), IT 497 (IT Capstone)</p>
 
